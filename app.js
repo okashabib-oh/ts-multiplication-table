@@ -13,10 +13,10 @@ form?.addEventListener('submit', event => {
         tableOf.innerText = `Table of ${valueInput} - 10`;
         ul.innerHTML += `
             <li>
-                <a href="#"
-                    class="flex items-center p-3 text-base font-bold text-gray-300 bg-gray-500 rounded-lg bg-gray-50 hover:bg-gray-600 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                <div
+                    class="flex items-center p-3 cursor-pointer text-base font-bold text-gray-300 bg-gray-500 rounded-lg bg-gray-50 hover:bg-gray-600 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                     <span class="flex-1 ms-3 whitespace-nowrap">${valueInput} x ${i} = ${valueInput * i}</span>
-                </a>
+                </div>
             </li>
         `;
     }
