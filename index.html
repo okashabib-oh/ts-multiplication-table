@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <title>Time Table</title>
+</head>
+
+<body class="bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')]">
+
+    <form class="max-w-md mx-auto mt-10" id="form">
+        <label for="default-search"
+            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+        <div class="relative">
+            <input type="number" id="table"
+                class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Enter number" required />
+            <button type="submit"
+                class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Generate</button>
+        </div>
+    </form>
+
+<center>
+    <div id="card"
+        class="hidden w-full max-w-sm p-4 border bg-gray-800 border-gray-200 rounded-lg shadow sm:p-6 mt-10 dark:bg-gray-800 dark:border-gray-700">
+        <h5 class="mb-3 text-base font-semibold text-gray-300 md:text-xl dark:text-white" id="tableOf"></h5>
+        <ul class="my-4 space-y-3" id="tableUl">
+            <!-- <li>
+                <a href="#"
+                    class="flex items-center p-3 text-base font-bold text-gray-300 bg-gray-500 rounded-lg bg-gray-50 hover:bg-gray-600 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <span class="flex-1 ms-3 whitespace-nowrap" id="tableValue">Shaka</span>
+                </a>
+            </li> -->
+        </ul>
+    </div>
+</center>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
